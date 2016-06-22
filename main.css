@@ -3,11 +3,8 @@
 	border: 1px solid #0fb8c6;
 }
 
-.accordian {
-}
-
 .sections {
-	max-height: 300px;
+	max-height: 600px;
 }
 
 .section-title {
@@ -26,6 +23,12 @@
 	transition: ease .5s;
 }
 
+.content {
+	max-height: 600px;
+	overflow: hidden;
+	transition: all .5s;
+}
+
 .content p {
 	padding: 20px;
 	margin: 0;
@@ -33,18 +36,14 @@
 	border-right: 1px solid #0fb8c6;
 }
 
-.section-hidden {
-	overflow: hidden;
-	transition: all 2s;
-}
-.content {
-	max-height: 300px;
-	overflow: hidden;
-	transition: all .5s;
-}
 .content.section-hidden {
 	max-height: 0px;
 	overflow: hidden;
 	transition: all .5s;
 
 }
+
+.section-hidden {
+	overflow: hidden;
+	transition: all 2s;
+}	
